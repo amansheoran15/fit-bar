@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    background: #000;
+    /* height: 200vh; */
+}
+
+/*Common Rules*/
+
+.section{
+    display: flex;
+}
+
+.section:nth-child(2n){
+    background-color:white;
+}
+
+
+/* navbar  */
+.navbar-nav{
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-left: 56% !important;
+}
+.nav-item{
+    margin-right: 25px !important;
+}
+.nav-item a{
+    color: white !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 20px;
+}
+.navbar{
+    /* position: absolute fixed; */
+    /* top: 0; */
+    /* position: sticky ; */
+    width: 100% !important;
+}
+
+.nav-item a:hover{
+    /* background: #FEE715FF; */
+    color: #FEE715FF !important;
+    background: #000;
+}
+
+/*Slider*/
+
+.home img{
+    width:100vw;
+    height:60vh;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+/*Facilities*/
+
+#facilities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    box-sizing: border-box;
+    padding: 8vw 0;
+}
+
+.facilities-div{
+    border: 1px solid white;
+    min-height: 200px;
+    min-width: 200px;
+    height: 40vh;
+    width: 40vh;
+    margin: 3vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px white;
+    /*margin-bottom: 10vw;*/
+}
+
+/*#mma{*/
+/*    margin-bottom: 10vw;*/
+/*}*/
+
+
+/*Benefits*/
+
+#benefits{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white;
+    justify-content:space-around;
+    box-sizing: border-box;
+    padding: 8vw 0;
+}
+
+.benefits-div{
+    border: 1px solid black;
+    min-width:100px;
+    min-height:100px;
+    width:20vh;
+    height:20vh;
+    margin:3vw;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+}

@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    background: #000;
+    /* height: 300vh; */
+}
+
+/*Common Rules*/
+
+:root{
+    --font:'Ubuntu', sans-serif;
+    --theme-color: rgb(215, 165, 29);
+}
+
+/*section{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
+
+section:nth-child(2n){
+    background-color:white;
+}
+
+
+
+/* navbar  */
+
+.nav-item{
+    margin-right: 25px !important;
+}
+
+.nav-item a{
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 20px;
+}
+.nav-item .home{
+    font-weight: bold !important;
+    color: #FEE715FF !important;
+}
+.navbar{
+    /* position: absolute fixed; */
+    /* top: 0; */
+    /* position: sticky ; */
+    width: 100% !important;
+}
+
+.nav-item a:hover{
+    /* background: #FEE715FF; */
+    font-weight: bold;
+    color: #FEE715FF !important;
+    /*background: #000;*/
+}
+
+.dropdown-item:hover{
+    background-color:transparent !important;
+    color: white;
+}
+
+/*Slider*/
+
+.wh{
+    width: 100% !important;
+    height: 60vh !important;
+}
+
+.imgg{
+    height: 60vh !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+/*Facilities*/
+
+#facilities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-heading{
+    box-sizing: border-box;
+    margin-top: 3rem;
+}
+
+.section-heading:hover span{
+    color: var(--theme-color);
+}
+
+.section-heading:hover i{
+    color: var(--theme-color);
+}
+
+.section-heading i{
+    color:white;
+    font-size: 4rem;
+    transition: color 0.5s ease-in-out;
+}
+
+.section-heading span{
+    color:white;
+    font-size: 4rem;
+    padding-left: 2rem;
+    transition: color 0.5s ease-in-out;
+}
+
+#facilities-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    box-sizing: border-box;
+    /*padding: 8vw 0;*/
+}
+
+.facilities-div{
+    position: relative;
+    /*border: 1px solid white;*/
+    min-height: 200px;
+    min-width: 200px;
+    height: 50vh;
+    width: 50vh;
+    margin: 3vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px white;
+    transition: box-shadow 0.5s ease-in-out;
+    /*margin-bottom: 10vw;*/
+}
+
+.facilities-div:hover{
+    box-shadow: 0 0 15px white;
+}
+
+.facilities-img {
+    border-radius:inherit;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.facilities-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.facilities-content{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    border-radius:inherit;
+    top:0;
+    left:0;
+    color:transparent;
+    text-align:center;
+    transition: all 0.5s ease-in-out;
+}
+
+.facilities-content:hover{
+    background-color: rgba(215, 165, 29, 0.75);
+    color: black;
+    font-family:var(--font);
+}
+
+.facilities-subhead{
+    /*box-sizing: border-box;*/
+    /*margin-top:2rem;*/
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.facilities-desc{
+    text-align: justify;
+    padding:5rem 1rem;
+    font-size: 1.5rem;
+}
+
+
+/*Benefits*/
+
+#benefits{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(static/benefits.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content:space-around;
+    box-sizing: border-box;
+    padding: 8vw 6vw;
+    width: 100vw;
+}
+
+.benefits-div{
+    border: 6px solid black;
+    min-width:100px;
+    min-height:100px;
+    width:20vh;
+    height:20vh;
+    margin:3vw;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#reduce-stress img{
+  width: 70px;
+  height: auto;
+  color: white;
+  
+}
+#Self-confidence img{
+    width: 70px;
+  height: auto;
+  display: block;
+}
+#Sharpen-Memory img{
+    width: 70px;
+    height: auto;
+    display: block;
+}
+#Relaxation img{
+    width: 70px;
+    height: auto;
+    display: block;
+}
+#Alleviate-Anxiety img{
+    width: 70px;
+    height: auto;
+    display: block;
+}
+.benefits-div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+}
+.benefits-div1:hover .benefits-div{
+    border: 0;
+    background: var(--theme-color);
+    box-shadow: 0 0 40px black;
+    transition: box-shadow 0.5s ease-in-out;
+    /*animation: fadeIn 2s  ease-in-out 0s 1; */
+}
+
+.benefits-div1:hover h4{
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content{
+    height:auto;
+    width:80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:2rem;
+}
+
+.suggestions-form{
+    height:inherit;
+}
+
+.suggestions-form form{
+    height:inherit;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.suggestions-form form input::placeholder ,textarea::placeholder {
+    color:white;
+    opacity:0.7;
+
+}
+
+.suggestions-form-field {
+    width: 100%;
+    margin-bottom:2rem;
+}
+
+.suggestions-form-field input,textarea{
+    padding-left:5px;
+    color:white;
+    margin-bottom: 2rem;
+    font-size:1.25rem;
+    width:100%;
+    background-color: transparent;
+    border:0px solid transparent;
+    border-bottom: 2px solid white;
+}
+
+.suggestions-form form button {
+    padding:0.25rem 0.75rem;
+    font-size:1.5rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    margin: auto;
+}
+
+.suggestions-form form button:hover{
+    background-color:black;
+    border:1px solid white;
+    color: var(--theme-color);
+}
+
+.suggestions-form-field,button{
+    margin: 10px;
+}
+
+#map{
+    display: flex;
+    justify-content: flex-end;
+    width: 40vw;
+    margin-left: 10vw;
+}
+
+.contact-info{
+    margin-left: 1.5rem;
+}
+
+#map iframe{
+    border-radius: 2rem;
+}
+
+.address{
+    color: white;
+    display: block;
+    margin-top: 2rem;
+}
+
+.address:hover{
+    color: var(--theme-color);
+}
+
+.address i{
+    padding-right:0.75rem;
+}
+
+.social-media i{
+    font-size: 2rem;
+    color: white;
+    padding:4rem ;
+}
+
+.social-media i:hover{
+    color:var(--theme-color);
+}
+/* .nav-item .home{
+    color: var(--theme-color) !important;
+    font-weight: bold !important;
+} */

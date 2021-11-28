@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background: linear-gradient( to right,rgb(255, 255, 155),rgb(249, 255, 84)); */
+    /* height: 300vh; */
+    /* background: linear-gradient(to right,yellow,white); */
+    background: whitesmoke;
+
+}
+
+:root{
+    --font:'Ubuntu', sans-serif;
+    --theme-color: rgb(215, 165, 29);
+}
+
+/* navbar  */
+
+.nav-item{
+    margin-right: 25px !important;
+}
+.nav-item a{
+    color: white !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 20px;
+}
+.navbar{
+    /* position: absolute; */
+    /* top: 0; */
+    position: sticky ;
+    width: 100% !important;
+}
+
+.nav-item a:hover{
+    /* background: #FEE715FF; */
+    color: #FEE715FF !important;
+    /* background: #000; */
+}
+.nav-item .active{
+    color: #FEE715FF !important;
+}
+.dropdown-item:hover{
+    background: #000;
+}
+
+/*Images*/
+
+#images-container{
+    display:inline-block;
+    padding:50px;
+
+}
+
+#large-image{
+    height:500px;
+    width:500px;
+    background-image: url(static/tshirt.jpeg.webp);
+    background-size: contain;
+    background-position: center;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+}
+
+.small-image{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    margin: 10px;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+#img1{
+    background-image: url(static/tshirt.jpeg.webp);
+}
+
+#img2{
+    background-image: url(static/tshirt2.jpeg.webp);
+}
+
+#img3{
+    background-image: url(static/tshirt3.jpeg.webp);
+}
+
+#product-info{
+    display: inline-block;
+    position: absolute;
+    top: 131px;
+}
+
+#product-name{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#product-price{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#product-size{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#add-cart{
+    margin-top:100px;
+}
+
+#add-cart button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+}
+
+#add-cart button i{
+    margin-right: 5px;
+}
